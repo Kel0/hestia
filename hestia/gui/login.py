@@ -11,7 +11,7 @@
 from PySide2.QtCore import *
 from PySide2.QtWidgets import *
 
-from .img import animeicon_rc
+from .img import animeicon_rc  # noqa: F841
 
 
 class Ui_Form(object):
@@ -52,7 +52,7 @@ class Ui_Form(object):
 
     def retranslateUi(self, Form):
         Form.setWindowTitle(QCoreApplication.translate("Form", u"Form", None))
-        self.lineEdit.setText(QCoreApplication.translate("Form", u"Login", None))
+        self.lineEdit.setText(QCoreApplication.translate("Form", u"Email", None))
         self.lineEdit_2.setText(QCoreApplication.translate("Form", u"Password", None))
         self.label.setText(
             QCoreApplication.translate(
